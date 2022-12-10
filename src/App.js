@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
 import Landing from "./pages/Landing";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <Container maxWidth='lg'>
       <Navbar />
       <Landing />
+      <About />
     </Container>
   );
 }
