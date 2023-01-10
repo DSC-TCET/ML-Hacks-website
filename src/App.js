@@ -5,6 +5,7 @@ import Landing from "./pages/Landing";
 import background from "./assets/background.gif";
 import Events from "./pages/Events";
 import Timeline from "./pages/Timeline";
+import Sponser from "./pages/Sponser";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <About />
       <Events />
       <Timeline />
+      <Sponser />
     </Container>
   );
 }
