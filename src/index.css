@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #050117;
+  background-color: #03000d;
   color: white;
   font-family: 'Roboto', sans-serif;
 }
@@ -27,4 +27,149 @@ body {
 
 .bg-blue {
   background-color: #0598ce;
+}
+
+.move {
+  translate: translateX(-100vw);
+  animation: moves infinite linear 5000ms;
+  
+}
+
+.movel {
+  animation: moves infinite linear 5000ms reverse;
+}
+.movelong {
+  animation: moveslong infinite linear 5000ms;
+}
+.movelongl {
+  animation: moveslong infinite linear 5000ms reverse;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .move {
+    animation: moves infinite linear 10000ms;
+  }
+  .movel {
+    animation: moves infinite linear 10000ms reverse;
+  }
+  .movelong {
+    animation: moveslong infinite linear 10000ms;
+  }
+  .movelongl {
+    animation: moveslong infinite linear 10000ms reverse;
+  }
+}
+
+@keyframes moves {
+  0% {
+    visibility: visible;
+    transform: translateX(-50vw); 
+  }  
+  100% {
+    visibility: visible;
+    transform: translateX(150vw); 
+  }
+}
+@keyframes moveslong {
+  0% {
+    visibility: visible;
+    transform: translateX(-50vw); 
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(150vw); 
+  }
+}
+
+/* .marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+}
+
+.marquee p {
+  display: inline-block;
+  animation: marquee 2s linear infinite;
+}
+
+.marquee2 p {
+  animation-delay: 1s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+} */
+
+.registerBtn {
+  background-color: #eee;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  width: 10em;
+  border-radius: 1rem;
+  color: #03000d;
+  box-shadow: 0 0.4rem #a4a1a1;
+  cursor: pointer;
+  transition: all;
+ }
+ 
+ .registerBtn:active {
+  color: white;
+  transition: all;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+ }
+ 
+ .registerBtn:hover:not(:disabled) {
+  background: lightcoral;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+ }
+ 
+ .registerBtn:disabled {
+  cursor: auto;
+  color: grey;
+ }
+
+ .card {
+  width: 17em;
+  height: 22.5em;
+  background: #e4e4e4;
+  transition: 1s ease-in-out;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.card span {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  display: block;
+  padding-top: 1em;
+  font-size: 2rem;
+}
+
+.card .info {
+  font-weight: 400;
+  color: rgb(49, 49, 49);
+  display: block;
+  text-align: center;
+  padding-top: 0.1em;
+  font-size: 1rem;
+  margin: 1em;
+  margin-top: 1em;
+}
+
+.timelineevent:nth-child(even) * {
+  margin-left: auto;
 }

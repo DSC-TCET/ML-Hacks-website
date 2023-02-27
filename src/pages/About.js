@@ -1,18 +1,22 @@
 import React from "react";
 import LoremIpsum from "react-lorem-ipsum";
 import gif from "../assets/ML.gif";
+
 import Heading from "../components/Heading";
 
 const About = () => {
   return (
-    <div id='about' className='container flex space-x-8 w-full pt-24'>
+    <div id='about' className='container flex  w-full pt-24 relative'>
+      <img src="/Circuit Board.svg" className="object-contain w-full absolute top-0 left-0 
+      opacity-20 -z-10
+      " width="1440" height="560" />
       <div className='flex justify-between items-center'>
-        <div style={{ width: "50%", marginRight: "2rem" }}>
-          <img src={gif} className='w-full h-50'></img>
-        </div>
-        <div style={{ width: "50%", margin: "1rem" }}>
+        {/* <div style={{ width: "50%", marginRight: "2rem" }}>
+          <img src="/about.png" className='w-50'></img>
+        </div> */}
+        <div className="w-full"  > 
           <Heading>About</Heading>
-          <p className='text-justify text-md mt-4'>
+          <p className='text-justify text-lg mt-4'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt
             mollitia labore rerum. Aliquam et ipsam laudantium ad animi omnis
             reprehenderit. Veniam quam earum quos amet iure modi molestias nisi!
